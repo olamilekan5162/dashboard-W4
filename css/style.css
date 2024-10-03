@@ -191,7 +191,7 @@ form div label {
 }
 
 main .about-banner {
-    padding: 20px 200px;
+    padding: 20px;
     border-bottom: 1px solid brown;
     display: flex;
     align-items: center;
@@ -236,7 +236,7 @@ main .about-banner .container .img-container {
 }
 
 main .table-banner {
-    padding: 20px 100px;
+    padding: 20px;
     border-bottom: 1px solid brown;
     display: flex;
     align-items: center;
@@ -268,8 +268,6 @@ tr:nth-child(odd){
 }
 
 main .form-banner {
-    padding: 20px 200px;
-    border-bottom: 1px solid brown;
     display: flex;
     align-items: center;
     justify-content: center;
