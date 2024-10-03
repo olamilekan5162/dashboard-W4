@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-bottom: 1px solid brown;
+}
+
+header .logo {
+    color: blueviolet;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header a {
+    color: brown;
+    font-weight: 500;
+}
+
+main {
+    flex: 1;
+    padding: 0 20px;
+}
+
+main .banner {
+    padding: 50px 0;
+    border-bottom: 1px solid brown;
+    color: blueviolet;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+main .banner .hero-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 475px;
+}
+
+.hero-texts h1 {
+    font-size: 2.5rem;
+}
+
+button {
+    padding: 10px 15px;
+    border: 1px solid blueviolet;
+    border-radius: 8px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 500;
+}
+
+button:hover {
+    color: blueviolet;
+    background-color: transparent;
+}
+
+
+.hero-texts button {
+    align-self: flex-start;
+}
+main .banner .hero-img {
+    max-width: 600px;
+    overflow: hidden;
+    flex-grow: 0;
+}
+
+main .banner .hero-img img {
+    width: 100%;
+}
+
+main .info, main .devs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0 ;
+}
+.info h2, .devs h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+.row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row .card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px brown;
+    border: 1px solid brown;
+    align-items: center;
+    width: 300px;
+    flex-grow: 1;
+}
+
+.row .card .desc {
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.info .card {
+    box-shadow: none;
+}
+
+form {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+legend {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+   margin-bottom: 16px;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    color: gray;
+    font-weight: 400;
+}
+label input, select {
+    display: block;
+    padding: 10px;
+    border: 0.5px solid blueviolet;
+    background-color: #fff;
+    border-radius: 8px;
+    color: black;
+}
+
+input, select {
+    outline-color: blueviolet;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form div label {
+    flex-direction: row;
+}
+
+main .about-banner {
+    padding: 20px 200px;
+    border-bottom: 1px solid brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .about-banner .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    background-color: white;
+    box-shadow: 0 0 3px brown;
+    height: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+
+}
+
+main .about-banner .container .about-img {
+    max-width: 500px;
+    overflow: hidden;
+    flex-grow: 0;
+}
+
+.about-banner .container .about-img img {
+    height: 400px;
+    width: auto;
+    border-radius: 3px;
+}
+.about-banner .container .about-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 475px;
+    text-align: justify;
+    color: brown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-texts h1 {
+    font-size: 2.5rem;
+}
+
+footer {
+    padding: 12px 20px;
+    border-top: 1px solid brown;
+    text-align: center;
+}
