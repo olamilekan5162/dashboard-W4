@@ -45,7 +45,7 @@ header a {
 
 main {
     flex: 1;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 main .banner {
@@ -170,14 +170,14 @@ label {
 label input, select {
     display: block;
     padding: 10px;
-    border: 0.5px solid blueviolet;
+    border: 0.5px solid brown;
     background-color: #fff;
     border-radius: 8px;
     color: black;
 }
 
 input, select {
-    outline-color: blueviolet;
+    outline-color: brown;
 }
 
 form div {
@@ -201,27 +201,27 @@ main .about-banner .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex: 1;
+    gap: 10px;
     background-color: white;
     box-shadow: 0 0 3px brown;
-    height: auto;
+    height: fit-content;
     padding: 10px;
     flex-wrap: wrap;
 
 }
 
-main .about-banner .container .about-img {
+main .about-banner .container .img-container {
     max-width: 500px;
     overflow: hidden;
     flex-grow: 0;
 }
 
-.about-banner .container .about-img img {
+.about-banner .container .img-container img {
     height: 400px;
     width: auto;
     border-radius: 3px;
 }
-.about-banner .container .about-texts {
+.about-banner .container .texts-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -231,12 +231,12 @@ main .about-banner .container .about-img {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.about-texts h1 {
+.texts-container h1 {
     font-size: 2.5rem;
 }
 
 main .table-banner {
-    padding: 20px 150px;
+    padding: 20px 100px;
     border-bottom: 1px solid brown;
     display: flex;
     align-items: center;
@@ -269,7 +269,6 @@ tr:nth-child(odd){
 
 main .form-banner {
     padding: 20px 200px;
-    border-bottom: 1px solid brown;
     display: flex;
     align-items: center;
     justify-content: center;
